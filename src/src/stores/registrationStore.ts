@@ -88,16 +88,16 @@ class RegistrationStore {
     );
     this.phoneError = ValidatePhone(this.phone);
     this.raceError = ValidateRace(this.race);
-    if (
-      this.loginError ||
-      this.emailError ||
-      this.passwordError ||
-      this.phoneError ||
-      this.raceError
-    ) {
-      this.step = 0;
-      return;
-    }
+    // if (
+    //   this.loginError ||
+    //   this.emailError ||
+    //   this.passwordError ||
+    //   this.phoneError ||
+    //   this.raceError
+    // ) {
+    //   this.step = 0;
+    //   return;
+    // }
 
     // Unique user key
     const userKey = `${this.login}_${this.password1}`;
