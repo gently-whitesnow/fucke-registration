@@ -9,5 +9,14 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Отключить копирование, вырезание и вставку
+      document.addEventListener('copy', (e) => e.preventDefault());
+      document.addEventListener('cut', (e) => e.preventDefault());
+      document.addEventListener('paste', (e) => e.preventDefault());
+
+      // Отключить контекстное меню (правый клик)
+      document.addEventListener('contextmenu', (e) => e.preventDefault());
+    </script>
   </body>
 </html>

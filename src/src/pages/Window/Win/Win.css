@@ -1,0 +1,28 @@
+@keyframes rainbowText {
+  0% {
+    color: red;
+  }
+  16% {
+    color: orange;
+  }
+  33% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66% {
+    color: blue;
+  }
+  83% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+.rainbow {
+  font-size: 2em; /* настройте размер текста */
+  animation: rainbowText 1.8s linear infinite; /* скорость переливания */
+}
